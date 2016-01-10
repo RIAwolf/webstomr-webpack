@@ -1,0 +1,29 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "a simple to-do list made with angular",
+  "main": "index.js",
+  "scripts": {
+    "package-all": "webpack",
+    "serve-all": "webpack-dev-server",
+    "begin": "npm run package-all && npm run serve-all"
+  },
+  "author": "martynas",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "css-loader": "^0.23.1",
+    "jquery": "^2.2.0",
+    "source-map": "^0.5.3",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "css-loader": "^0.23.1",
+    "jquery": "^2.2.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.10"
+  }
+}
