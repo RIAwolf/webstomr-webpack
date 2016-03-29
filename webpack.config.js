@@ -4,7 +4,8 @@
 'use strict';
 
 var webpack = require('webpack'),
-    path = require('path');
+    path = require('path'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 var APP = path.join(__dirname, 'app');
@@ -13,7 +14,6 @@ var BUILD = path.join(__dirname, 'build');
 module.exports = {
     devtool: "source-map",
     context: APP,
-
     entry: {
         app: [
 
@@ -21,7 +21,12 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Custom template',
+            template: 'index.html',
+            inject: 'html'
+        })
     ],
     output: {
         path: BUILD,

@@ -1,23 +1,25 @@
 {
-  "name": "to-do",
+  "name": "webstorm-webpack",
   "version": "1.0.0",
-  "description": "a simple to-do list made with angular",
+  "description": "demonstration of debug capabilities with webpack",
   "main": "index.js",
   "scripts": {
     "package-all": "webpack",
-    "serve-all": "webpack-dev-server",
+    "serve-all": "http-server build",
     "begin": "npm run package-all && npm run serve-all"
   },
   "author": "martynas",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "angular": "^1.4.8",
     "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.14.0",
+    "http-server": "^0.9.0",
     "jquery": "^2.2.0",
     "source-map": "^0.5.3",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.10",
-    "webpack-dev-server": "^1.14.0"
+    "webpack": "^1.12.10"
   },
   "dependencies": {
     "angular": "^1.4.8",

@@ -1,15 +1,12 @@
-/**
- * Created by Martynas on 1/10/2016.
- */
-/*jshint browser:true */
 'use strict';
-// load the main app file
-require('./vendor')();                    // run an empty function
+
+require('./vendor')();
 var appModule = require('../app');
-// replaces ng-app="appName"
+
+for (var i = 0; i < 5; i++) {
+    console.log(i);
+}
+
 angular.element(document).ready(function () {
-    angular.bootstrap(document, [appModule.name], {
-        //strictDi: true
-    });
-    alert("works 2");
+    angular.bootstrap(document, [appModule.name], {});
 });
